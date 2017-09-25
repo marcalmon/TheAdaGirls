@@ -1,0 +1,263 @@
+*{
+  font-family: 'Saira Extra Condensed', sans-serif; 
+}
+
+body{
+  background: #E1F5F2;
+}
+
+p{color: white;
+}
+
+/*--- hover danza clasica*/
+div#imagen {
+  width: :450px;
+  height:300px;
+  background-image: url('../imgs/dc1.jpg');
+  background-repeat: no-repeat; 
+  margin-left: 80px;
+
+}
+
+div#info{
+  position: absolute;
+  overflow: hidden;
+  width: 450px;
+  height: 300px;
+  background-color: rgba(31,31,31,0.9);
+  -webkit-transition:opacity 0.2s;
+  opacity: 0;
+}
+
+div#imagen:hover div#info{
+  opacity: 1;
+}
+p#d{
+  position: absolute;
+  margin-top: 70px;
+  -webkit-transition:margin 0.2s;
+  margin-left: -70px;
+  text-align: center;
+  font-size: 21px;
+
+}
+div#imagen:hover p#d{
+  margin-left: 150px;
+  margin-top: 120px;
+}
+
+p#d1{
+  margin:auto;
+  width: 310px;
+  text-align: center;
+   -webkit-transition:margin 0.3s;
+  margin-top: 220px;
+
+}
+
+div#imagen:hover p#d1{
+  margin-top: 150px;
+}
+
+
+/*--- hover danza comtemporanea*/
+div#imagen1 {
+  width: :450px;
+  height:300px;
+  background-image: url('../imgs/cont2.gif');
+  background-repeat: no-repeat; 
+  margin-right: 100px;
+
+}
+
+div#info1{
+  position: absolute;
+  overflow: hidden;
+  width: 450px;
+  height: 300px;
+  background-color: rgba(31,31,31,0.9);
+  -webkit-transition:opacity 0.2s;
+  opacity: 0;
+}
+
+div#imagen1:hover div#info1{
+  opacity: 1;
+}
+p#d2{
+  position: absolute;
+  margin-top: 70px;
+  -webkit-transition:margin 0.2s;
+  margin-left: -70px;
+  text-align: center;
+  font-size: 21px;
+
+}
+div#imagen1:hover p#d2{
+ margin-left: 120px;
+  margin-top: 120px;
+}
+
+p#d3{
+  margin:auto;
+  width: 310px;
+  text-align: center;
+   -webkit-transition:margin 0.3s;
+  margin-top: 220px;
+
+}
+
+div#imagen1:hover p#d3{
+  margin-top: 150px;
+}
+
+/*--- hover danza tango*/
+div#imagen2 {
+  width: :400px;
+  height:300px;
+  background-image: url('../imgs/tg1.jpg');
+  background-repeat: no-repeat; 
+  margin-left: 140px;
+   margin-top: 100px;
+}
+
+div#tango{
+  position: absolute;
+  overflow: hidden;
+  width: 400px;
+  height: 300px;
+  background-color: rgba(31,31,31,0.9);
+  -webkit-transition:opacity 0.2s;
+  opacity: 0;
+}
+
+div#imagen2:hover div#tango{
+  opacity: 1;
+}
+p#titulo{
+  position: absolute;
+  margin-top: 70px;
+  -webkit-transition:margin 0.2s;
+  margin-left: -70px;
+  text-align: center;
+  font-size: 21px;
+
+}
+div#imagen2:hover p#titulo{
+  margin-left: 165px;
+  margin-top: 100px;
+}
+
+p#contenido{
+  margin:auto;
+  width: 310px;
+  text-align: center;
+   -webkit-transition:margin 0.3s;
+  margin-top: 220px;
+
+}
+
+div#imagen2:hover p#contenido{
+  margin-top: 140px;
+}
+/*--- hover danza oriental*/
+div#imagen3 {
+  width: :400px;
+  height:300px;
+  background-image: url('../imgs/do3.jpg');
+  background-repeat: no-repeat; 
+   margin-top: 100px;
+
+}
+
+div#oriental{
+  position: absolute;
+  overflow: hidden;
+  width: 400px;
+  height: 300px;
+  background-color: rgba(31,31,31,0.9);
+  -webkit-transition:opacity 0.2s;
+  opacity: 0;
+}
+
+div#imagen3:hover div#oriental{
+  opacity: 1;
+}
+p#titulo1{
+  position: absolute;
+  margin-top: 70px;
+  -webkit-transition:margin 0.2s;
+  margin-left: -70px;
+  text-align: center;
+  font-size: 21px;
+
+}
+div#imagen3:hover p#titulo1{
+ margin-left: 120px;
+  margin-top: 100px;
+}
+
+p#contenido1{
+  margin:auto;
+  width: 310px;
+  text-align: center;
+   -webkit-transition:margin 0.3s;
+  margin-top: 220px;
+
+}
+
+div#imagen3:hover p#contenido1{
+  margin-top: 140px;
+}
+
+/*--- hover danza urbana*/
+div#imagen4 {
+  width: :500px;
+  height:269px;
+  background-image: url('../imgs/dub3.jpg');
+  background-repeat: no-repeat; 
+   margin-top: 100px;
+   margin-left: 350px;
+   margin-right: 350px;
+   margin-bottom: 100px;   
+}
+
+div#urbano{
+  position: absolute;
+  overflow: hidden;
+  width: 500px;
+  height: 269px;
+  background-color: rgba(31,31,31,0.9);
+  -webkit-transition:opacity 0.2s;
+  opacity: 0;
+}
+
+div#imagen4:hover div#urbano{
+  opacity: 1;
+}
+p#titulo2{
+  position: absolute;
+  margin-top: 70px;
+  -webkit-transition:margin 0.2s;
+  margin-left: -70px;
+  text-align: center;
+  font-size: 21px;
+
+}
+div#imagen4:hover p#titulo2{
+  
+  margin-left: 170px;
+  margin-top: 100px;
+}
+
+p#contenido2{
+  margin:auto;
+  width: 310px;
+  text-align: center;
+   -webkit-transition:margin 0.3s;
+  margin-top: 280px;
+
+}
+
+div#imagen4:hover p#contenido2{
+  margin-top: 140px;
+}

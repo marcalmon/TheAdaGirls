@@ -1,0 +1,115 @@
+*{
+	margin: 0;
+	padding:0;
+}
+body{
+	font-family: 'Saira Extra Condensed', sans-serif;
+}
+.tituloh2{
+	font-size: 45px;
+}
+.tituloh3{
+	font-size: 25px;
+	font-weight: bold;
+}
+p{
+	font-size: 22px;
+}
+
+.color1{
+	background-color: #6BC5D2;
+}
+.color11{
+	background-color: #E1F5F2;
+	border: 2px solid;
+	border-color:#E1F5F2;	
+	border-radius: 25px;
+
+
+
+}
+/*margenes parrafo*/
+.marg{ 
+	margin: 30px 50px;
+}
+
+
+main .colorletras{
+	color: #390050;
+	
+}
+
+.nuestrasinst{
+	border: 2px solid;
+	border-color:#6BC5D2 ;	
+	border-radius: 25px;
+	background-color: #6BC5D2;
+	color: white;
+
+}
+/*.profes2{
+	border: 2px solid;
+	border-color:#6BC5D2;	
+	border-radius: 25px;
+	background-color: #6BC5D2;
+	color: white;
+
+}*/
+
+.contico{
+	margin-left: 50px;
+}
+
+.ic{
+	width: 150px;
+	height: 150px;
+	margin: 20px 20px;
+	border: 2px solid;
+	border-radius: 15px 50px 30px;
+	border-color: #E1F5F2;
+	background-color: #E1F5F2;
+	
+}
+.imgserv{
+	width: 150px;
+	height: 150px;
+	margin: 20px 20px;
+	border: 2px solid;
+	border-radius: 25px;
+	border-color:white ;
+	
+
+}
+.prof{
+	width: 150px;
+	height: 150px;
+	margin: 20px 20px;
+	border: 2px solid;
+	border-radius: 25px;
+	border-color:#390050 ;
+	background-color: #E1F5F2;
+
+}
+
+.redessociales{
+	
+	color: #6BC5D2;
+
+}
+.figucap{
+	font-size: 15px;
+	font-weight: bold;
+}
+
+
+
+/*Módulo  “Nuestros docentes” tiene que ser él último item. 
+*Y el texto tiene que tener el nombre, cargo de los profesores 
+*con sus redes sociales respectivas, sin efectos. De lo general a lo particular.
+Agregar un item de “ Nuestros Servicios” que se visualice con iconos. 
+(Ver http://www.piccolinoeventos.com.ar sección equipamientos)
+*/
+
+/*eliminar los comentarios de los iconos en nuestras instalaciones
+*enlace para iconos de redes sociales
+

@@ -1,4 +1,14 @@
-*{
-	margin: 0;
-	padding: 0;
+
+/*-----------------Dana---------------------------------*/
+main p{
+
+	font-size: 3.3em;
+	font-family: 'Saira Extra Condensed', sans-serif;
+	color: #E1F5F2;
 }
+
+main .textSlider{
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/*--------------------mariana-------------------------------*/
