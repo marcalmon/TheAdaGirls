@@ -1,8 +1,3 @@
-*{
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-}
 
 body{
 	font-family: 'Saira Extra Condensed', sans-serif;
@@ -14,7 +9,7 @@ header{
 
 }
 
-header #marianImg img{
+header img{
 	width: 70%;
 }
 
@@ -37,15 +32,15 @@ footer{
 	align-items: center;
 }
 
-.text{
+footer .text{
 	color: #390050;
 }
 
-p{
+footer p{
 	font-size: 18px;
 }
 
-.redes a img{
+footer .redes a img{
 	width: 35px;
 	margin-right: 10px;
 }

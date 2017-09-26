@@ -3,6 +3,10 @@ body{
   font-family: 'Saira Extra Condensed', sans-serif;
 }
 
+main p{
+	font-size: 20px;
+}
+
 /**/
 .fila{
 	margin-top:100px;

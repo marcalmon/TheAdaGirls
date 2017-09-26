@@ -6,23 +6,23 @@ body{
   background: #E1F5F2;
 }
 
-p{color: white;
+main p{color: white;
 }
 
 /*--- hover danza clasica*/
 div#imagen {
-  width: :450px;
-  height:300px;
+  width: 400px;
+  height: 300px;
   background-image: url('../imgs/dc1.jpg');
   background-repeat: no-repeat; 
-  margin-left: 80px;
+  /*margin-left: 80px;*/
 
 }
 
 div#info{
   position: absolute;
   overflow: hidden;
-  width: 450px;
+  width: 400px;
   height: 300px;
   background-color: rgba(31,31,31,0.9);
   -webkit-transition:opacity 0.2s;
@@ -62,18 +62,18 @@ div#imagen:hover p#d1{
 
 /*--- hover danza comtemporanea*/
 div#imagen1 {
-  width: :450px;
+  width:400px;
   height:300px;
   background-image: url('../imgs/cont2.gif');
   background-repeat: no-repeat; 
-  margin-right: 100px;
+  /*margin-right: 100px;*/
 
 }
 
 div#info1{
   position: absolute;
   overflow: hidden;
-  width: 450px;
+  width: 400px;
   height: 300px;
   background-color: rgba(31,31,31,0.9);
   -webkit-transition:opacity 0.2s;
@@ -112,12 +112,12 @@ div#imagen1:hover p#d3{
 
 /*--- hover danza tango*/
 div#imagen2 {
-  width: :400px;
+  width:400px;
   height:300px;
   background-image: url('../imgs/tg1.jpg');
   background-repeat: no-repeat; 
-  margin-left: 140px;
-   margin-top: 100px;
+  /*margin-left: 140px;
+   margin-top: 100px;*/
 }
 
 div#tango{
@@ -165,7 +165,7 @@ div#imagen3 {
   height:300px;
   background-image: url('../imgs/do3.jpg');
   background-repeat: no-repeat; 
-   margin-top: 100px;
+   /*margin-top: 100px;*/
 
 }
 
@@ -211,14 +211,14 @@ div#imagen3:hover p#contenido1{
 
 /*--- hover danza urbana*/
 div#imagen4 {
-  width: :500px;
-  height:269px;
+  width:400px;
+  height:300px;
   background-image: url('../imgs/dub3.jpg');
   background-repeat: no-repeat; 
-   margin-top: 100px;
+   /*margin-top: 100px;
    margin-left: 350px;
    margin-right: 350px;
-   margin-bottom: 100px;   
+   margin-bottom: 100px;   */
 }
 
 div#urbano{

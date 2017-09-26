@@ -3,25 +3,25 @@
 <head>
   <meta charset="utf-8">
   <link rel="stylesheet" href="../bootstrap-3.3.7-dist/css/bootstrap.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed" rel="stylesheet">
   <link rel="stylesheet" href="../css/styles.css">
   <link rel="stylesheet" href="../css/menu.css">
   <title></title>
 </head>
 <body>
-  <div class="container">
-    <header class="row">
-        <div class="col-md-2" id="marianImg">
-          <img src="imgs/logoada.png" alt="Logo" class="img-responsive">
+  <div class="container-fluid">
+      <header class="row">
+        <div class="col-lg-2">
+          <img src="../imgs/logoada.png" alt="Logo" class="img-responsive">
         </div>
-        <div class="col-md-10">
+        <div class="col-lg-10">
           <nav>
             <ul class="nav nav-pills">
-              <li><a href="#">Home</a></li>
-              <li><a href="html/Nosotros.html">Nosotros</a></li>
-              <li><a href="html/talleres.html">Talleres</a></li>
-              <li><a href="">Galeria</a></li>
-              <li><a href="html/contact.html">Contacto</a></li>
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="Nosotros.html">Nosotros</a></li>
+              <li><a href="Talleres.html">Talleres</a></li>
+              <li><a href="#">Galeria</a></li>
+              <li><a href="contact.html">Contacto</a></li>
               <!--li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Contacto<span class="caret"></span></a>
                 <ul class="dropdown-menu">
                   <li><a href="#">Formulario de Consulta</a></li>
@@ -33,48 +33,85 @@
         </div>
     </header>
 
-    <div class="row">
-      <div class="col md-12">
-        <h2>Consultanos tus dudas</h2>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-10">
-        <div><label for="first_name">Nombre</label><input type="text" name="Nombre" class="email space"></div>
-        <div><label for="last_name">Apellido</label><input type="text" name="Apellido" class="email space"></div>
-        <div><label for="sice">Fecha de nacimiento</label><input type="text" name="Sice" class="email space"></div>
-        <div><label for="email space">Email</label><input type="text" name="email space" class="email space"></div>
-        <div><label for="motiv">Motivo</label><select class="email space" name="Motiv">
-            <option value="consulta">Solo consulta</option>
-            <option value="inscription">Quiero inscribirme</option>
-            <option value="price">Quiero saber el costo</option>
-            <option value="more">Otra opción</option>
-        </select></div>
-        <div>
-          <label for="interest">Curso de interés</label>
-          <select class="email space" name="interest">
-            <option value="AM">Mañana</option>
-            <option value="PM">Tarde</option>
-            <option value="PM2">Noche</option>
-        </select></div>
-          <div>
-            <label for="text">Consulta</label>
-          </div>
-          <div>
-            <textarea name="texto" rows="8" cols="80" placeholder="Escribir aquí..." maxlength="500" class="email"></textarea>
-          </div>
-          <div class="center">
-            <button type="submit" name="Enviar" class="btn-medium">Enviar</button>
-            <button type="cancel" name="Cancelar" class="btn-medium">Cancelar</button>
-        </div>
-      </div>
-    </div>
-  </div>
+    
+    <main class="row">
+      <div class="col-lg-2">  </div>
+      <div class="col-lg-8">
+            <h2>Consultanos tus dudas</h2>
+            <form class="form-horizontal" action="#">
+
+            <!--div class="form-group">
+                <label class="control-label col-lg-3" for="email">Email:</label>
+                <div class="col-lg-9">
+                <input type="email" class="form-control" id="" id="email" placeholder="Enter email" name="email">
+                </div>
+            </div-->
+
+            <div class="form-group">
+              <label class="control-label col-lg-3" for="first_name">Nombre</label>
+            <div class="col-lg-9"><input type="text" name="Nombre" class="form-control" id="first_name"></div>
+            </div>
+
+            <div class="form-group">
+              <label class="control-label col-lg-3" for="last_name">Apellido</label>
+            <div class="col-lg-9"><input type="text" name="Apellido" class="form-control" id="last_name"></div>
+            </div>
+
+            <div class="form-group">
+              <label class="control-label col-lg-3" for="sice">Fecha de nacimiento</label>
+            <div class="col-lg-9"><input type="text" name="Sice" class="form-control" id="sice"></div>
+            </div>
+
+            <div class="form-group">
+              <label class="control-label col-lg-3" for="email">Email</label>
+              <div class="col-lg-9"><input type="text" name="email" class="form-control" id="email"></div>
+            </div>  
+
+            <div class="form-group">
+              <label class="control-label col-lg-3" for="motiv">Motivo</label>
+              <div class="col-lg-9">
+                <select class="form-control" id="motiv" name="Motiv">
+                  <option value="consulta">Solo consulta</option>
+                  <option value="inscription">Quiero inscribirme</option>
+                  <option value="price">Quiero saber el costo</option>
+                  <option value="more">Otra opción</option>
+                </select>
+                </div>
+            </div>    
+
+            <!--/div-->
+              <div class="form-group">
+                <label class="control-label col-lg-3" for="interest">Curso de interés</label>
+                <div class="col-lg-9">
+                  <select class="form-control" id="interest" name="interest">
+                    <option value="AM">Mañana</option>
+                    <option value="PM">Tarde</option>
+                    <option value="PM2">Noche</option>
+                  </select>
+                </div>
+              </div>  
+
+                <div class="form-group">
+                  <label class="control-label col-lg-3" for="text">Consulta</label>
+                  <div class="col-lg-9">
+                    <textarea name="texto" rows="8" cols="80" placeholder="Escribir aquí..." maxlength="500" id="text"></textarea>
+                  </div>
+                </div>  
+
+                <div class="col-lg-12 center">
+                  <button type="submit" name="Enviar" class="btn-medium">Enviar</button>
+                  <button type="cancel" name="Cancelar" class="btn-medium">Cancelar</button>
+                </div>
+           </form>  
+
+        <div class="col-lg-2">  </div>
+      </main>
+
   <footer class="row">
-      <div class="col-md-6 text">
+      <div class="col-lg-6 text">
         <p>Design for "The Ada Girls"</p>
       </div>
-      <div class="col-md-3 redes">
+      <div class="col-lg-3 redes">
         <h5 class="text-left"><span class="glyphicon glyphicon-earphone"></span> 4758-7846</h5>
         <h5 class="text-left"><span class="glyphicon glyphicon-envelope"></span> info@adaacademy.com</h5>
         <a href="#"><img src="imgs/logoface.png" alt="Facebook"></a>
@@ -82,13 +119,13 @@
         <a href="#"><img src="imgs/instaicon.png" alt="Instagram"></a>
       </div>
 
-      <div class="col-md-3">
+      <div class="col-lg-3">
         <p class="text-left"><span class="glyphicon glyphicon-map-marker"></span> Cerrito 628</p>
         <p class="text-left">Ciudad Autónoma De Buenos Aires</p>
         <p class="text-left">República Argentina</p>
       </div>
     </footer>
-</div>
+  </div>
 
 
 </body>
