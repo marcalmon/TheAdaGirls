@@ -1,0 +1,75 @@
+/*{
+	border: 1px solid black;
+}*/
+body{
+	background:#FFFFFF;
+}
+
+/*******************HEADER***************************/
+*{
+	font-family: 'Cabin', sans-serif;
+    color: #000000;	
+}
+
+/*#borderBottom{	
+	border-bottom: 20px groove #D0E5C6;
+}*/
+
+header{
+    border-bottom: 0.1em solid #000000;
+}
+
+header a{
+	font-size: 1.5em;
+	margin-top: 5em;
+	color: #000000;
+	padding:0em;
+}
+
+header .myTextStyleMd a{
+	font-size: 2em;
+	margin-top: 0em;
+	text-align: center;
+	border-bottom: 0.1em solid #D0E5C6;
+}
+
+header .nav>li>a:hover{
+	color: #D0E5C6;
+	background-color: #FFFFFF;
+}
+
+
+/*******************FOOTER***************************/
+footer{
+    margin-top: 2em;
+	border-top: 0.1em solid #000000;
+}
+
+footer li, footer .net a{
+    list-style: none;
+    color: #000000;	
+    font-size: 1.1em;
+    line-height: 1.3em;
+}
+
+footer .map{
+	border-left: 0.1em solid #D0E5C6;
+	font-size: 1.1em;
+    line-height: 0.6em;
+}
+/*{
+    list-style: none;
+    color: #390050;	
+    font-size: 1.5em;
+}*/
+
+footer .copyRight{
+	/*padding: 2em 0em;*/
+	font-size: 1.1em;
+}
+
+
+
+
+
+
