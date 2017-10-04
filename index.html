@@ -6,8 +6,8 @@
 	<title>Home</title>
 	<link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="css/headerFooter.css">
 	<link rel="stylesheet" type="text/css" href="css/home.css">
+	<link rel="stylesheet" type="text/css" href="css/headerFooter.css">
 	
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -18,22 +18,39 @@
 		<header class="row">
 		    <nav class="col-lg-12 col-md-12 col-sm-12 col-xs-12 navbar">
 				<div class="navbar-header">
-					<img class="pull-left img-responsive" src="imgs/150x150-navBrandAda.jpg" alt="">
+					<img class="pull-left img-responsive hidden-lg hidden-md" src="imgs/130x130-navBrandAda.jpg" alt="">
+					<img class="pull-left img-responsive hidden-sm hidden-xs" src="imgs/170x150-navBrandAda.jpg" alt="">
 			        <button type="button" class="navbar-toggle btn btn-lg pull-right" data-toggle="collapse" data-target="#myFirstNavbar" >
         			<span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
 					</button>        
 				</div>        
-		        <div class="collapse navbar-collapse pull-right" id="myFirstNavbar">
-				    <ul class="nav navbar-nav hidden-xs">
-				        <li><a href="#">Home</a></li>
-				        <li><a href="html/about.html">Nosotros</a></li>
+		        <div class="collapse navbar-collapse" id="myFirstNavbar">
+				    <ul class="nav navbar-nav pull-right hidden-xs ulLg">
+				        <li class="active"><a href="#">Home</a></li>
+				        <li class="dropdown">
+							<a class="dropdown-toggle" data-toggle="dropdown" href="html/about.html">Nosotros<span class="caret"></span></a>
+							<ul class="dropdown-menu" id="ulXs">
+								<li class="well-sm"><a href="#">Nuestra Historia</a></li>
+								<li class="well-sm"><a href="#">Nuestras Instalaciones</a></li>
+								<li class="well-sm"><a href="#">Nuestros Servicios</a></li>
+								<li class="well-sm"><a href="#">Nuestros Docentes</a></li>
+							</ul>
+						</li>
 				        <li><a href="html/class.html">Talleres</a></li>
 				        <li><a href="html/gallery.html">Galeria</a></li>
 				        <li><a href="html/contact.html">Contacto</a></li>
 				    </ul>
-				    <ul class="nav navbar-nav hidden-lg hidden-md  hidden-sm myTextStyleMd"> 
-				        <li><a href="#">Home</a></li>
-				        <li><a href="html/about.html">Nosotros</a></li>
+				    <ul class="nav navbar-nav hidden-lg hidden-md hidden-sm" id="ulXs"> 
+				        <li class="active"><a href="#">Home</a></li>
+				        <li class="dropdown">
+							<a class="dropdown-toggle" data-toggle="dropdown" href="html/about.html">Nosotros<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="#">Nuestra Historia</a></li>
+								<li><a href="#">Nuestras Instalaciones</a></li>
+								<li><a href="#">Nuestros Servicios</a></li>
+								<li><a href="#">Nuestros Docentes</a></li>
+							</ul>
+						</li>
 				        <li><a href="html/class.html">Talleres</a></li>
 				        <li><a href="html/gallery.html">Galeria</a></li>
 				        <li><a href="html/contact.html">Contacto</a></li>
@@ -68,16 +85,16 @@
 		                        <div class="item">
 						        	<img src="imgs/1200x500-homeStudio02.jpg" alt="Studio 02">
 						        	<div class="carousel-caption textSlider">
-							            <h3>Salón Amarrillo<h3>
-						                <h4>Piso sólido de madera</h4>
+							            <h4>Salón Amarrillo<h4>
+						                <h5>Piso sólido de madera</h5>
 							        </div>
 						       	</div>
 		
 						      	<div class="item">
 						        	<img src="imgs/1200x500-homeStudio03.jpg" alt="Studio 03"">
 						        	<div class="carousel-caption textSlider">
-							            <h3>Salón Azul<h3>
-						                <h4>Piso sólido de porcelanato</h4>
+							            <h4>Salón Azul<h4>
+						                <h5>Piso sólido de porcelanato</h5>
 							        </div>
 						      	</div>
 						    </div>
@@ -103,7 +120,7 @@
 	        		<article class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
 	                	<div class="well-lg">
 		                	<img class="img-responsive img-rounded" src="imgs/300x200-homeContemporaryDance.jpg" alt="Contemporary Dance">
-		        	        <div class="caption">
+		        	        <div class="caption text-justify">
 		        				<h5 class="text-center">Talleres</h5>
 		        				<p class="hidden-sm hidden-xs">Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
 		        				<a class="btn btn-block btn-sm" role="button" href="html/about.html"> Ver más...</a>
@@ -114,7 +131,7 @@
 	        		<article class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
 	                	<div class="well-lg">
 		                	<img class="img-responsive img-rounded" src="imgs/300x200-homeClass.jpg" alt="Class">
-		        	        <div class="caption">
+		        	        <div class="caption text-justify">
 		        				<h5 class="text-center">Clases</h5>
 		        				<p class="hidden-sm hidden-xs">Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
 		        				<a class="btn btn-block btn-sm" role="button" href="html/about.html"> Ver más...</a>
@@ -125,7 +142,7 @@
 	        		<article class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
 	                	<div class="well-lg">
 		                	<img class="img-responsive img-rounded" src="imgs/300x200-homeStudioRental.jpg" alt="Studio Rental">	    
-		                	<div class="caption">
+		                	<div class="caption text-justify">
 		        				<h5 class="text-center">Alquiler</h5>
 		        				<p class="hidden-sm hidden-xs">Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
 		        				<a class="btn btn-block btn-sm" role="button" href="html/about.html"> Ver más...</a>
@@ -136,7 +153,7 @@
 	        		<article class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
 	                	<div class="well-lg">
 		                	<img class="img-responsive img-rounded" src="imgs/300x200-homeEquipment.jpg" alt="Home Equipment">	    
-		                	<div class="caption">
+		                	<div class="caption text-justify">
 		        				<h5 class="text-center">Equipamiento</h5>
 		        				<p class="hidden-sm hidden-xs">Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
 		        				<a class="btn btn-block btn-sm" role="button" href="html/about.html"> Ver más...</a>
