@@ -18,7 +18,7 @@ main div.top{
 main div#imagen {
   width: 400px;
   height: 300px;
-  background-image: url('../imgs/dc1.jpg');
+  background-image: url('../img/dc1.jpg');
   box-shadow: 2px 2px 5px #999;
   background-repeat: no-repeat; 
   margin-left: 15em;
@@ -78,7 +78,7 @@ main div#imagen:hover p#d1{
 main div#imagen1 {
   width:400px;
   height:300px;
-  background-image: url('../imgs/cont2.gif');
+  background-image: url('../img/cont2.gif');
   box-shadow: 2px 2px 5px #999;
   background-repeat: no-repeat; 
   margin-left: 2em;
@@ -130,7 +130,7 @@ main div#imagen1:hover p#d3{
 main div#imagen2 {
   width:400px;
   height:300px;
-  background-image: url('../imgs/tg1.jpg');
+  background-image: url('../img/tg1.jpg');
   box-shadow: 2px 2px 5px #999;
   background-repeat: no-repeat; 
   margin-left: 17.375em;
@@ -181,7 +181,7 @@ main div#imagen2:hover p#contenido{
 main div#imagen3 {
   width: :400px;
   height:300px;
-  background-image: url('../imgs/do3.jpg');
+  background-image: url('../img/do3.jpg');
 
   background-repeat: no-repeat; 
   margin-top: 6.250em;
@@ -234,7 +234,7 @@ main div#imagen3:hover p#contenido1{
 main div#imagen4 {
   width:400px;
   height:300px;
-  background-image: url('../imgs/dub3.jpg');
+  background-image: url('../img/dub3.jpg');
   background-repeat: no-repeat; 
   box-shadow: 2px 2px 5px #999;
   margin-top: 6.250em;
