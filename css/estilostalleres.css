@@ -1,12 +1,12 @@
-*{
+
+
+body{
+  background:#FFFFFF;
   font-family: 'Saira Extra Condensed', sans-serif; 
 }
 
-body{
-  background: #E1F5F2;
-}
 
-main p{color: white;
+
 }
 
 main div.top{
@@ -44,19 +44,19 @@ main p#d{
   position: absolute;
   margin-top: 4.375em;
   -webkit-transition:margin 0.2s;
-  margin-left: -3.375em;
+  margin-left: -5.375em;
   text-align: center;
-  font-size: 1.313em;
+  font-size: 1.750em;
 
 }
 main p#d a{
   text-decoration: none;
-  color:pink;
-  
+  color:#1E4E28;
+  box-shadow: 2px 2px 5px #999;  
 }
 
 main div#imagen:hover p#d{
-  margin-left: 8.375em;
+  margin-left: 5.375em;
   margin-top: 5.500em;
 }
 
@@ -65,12 +65,16 @@ main p#d1{
   width: 310px;
   text-align: center;
   -webkit-transition:margin 0.3s;
-  margin-top: 13.750em;
+  margin-top: 10.750em;
+   font-size: 1.5em;
+   color:white;
 
 }
 
 main div#imagen:hover p#d1{
-  margin-top: 9.375em;
+  margin-top: 9em;
+  text-shadow: 5px 5px 5px #aaa;
+
 }
 
 
@@ -105,12 +109,18 @@ main p#d2{
   -webkit-transition:margin 0.2s;
   margin-left: -4.375em;
   text-align: center;
-  font-size: 1.313em;
+   font-size: 1.750em;
 
 }
+main p#d2 a{
+  text-decoration: none;
+  color:#1E4E28;
+  box-shadow: 2px 2px 5px #999;  
+}
+
 main div#imagen1:hover p#d2{
- margin-left: 7.500em;
-  margin-top: 7.500em;
+ margin-left: 3.500em;
+  margin-top: 4.500em;
 }
 
 main p#d3{
@@ -119,11 +129,14 @@ main p#d3{
   text-align: center;
    -webkit-transition:margin 0.3s;
   margin-top: 13.750em;
+  font-size: 1.5em;
+   color:white;
 
 }
 
 main div#imagen1:hover p#d3{
-  margin-top: 11.375em;
+  margin-top: 7.375em;
+  text-shadow: 5px 5px 5px #aaa;
 }
 
 /*--- hover danza tango*/
@@ -156,13 +169,19 @@ main p#titulo{
   -webkit-transition:margin 0.2s;
   margin-left: -4.375em;
   text-align: center;
-  font-size: 1.313em;
+   font-size: 1.750em;
 
 }
-main div#imagen2:hover p#titulo{
-  margin-left: 10.313em;
-  margin-top: 6.250em;
+main p#titulo a{
+  text-decoration: none;
+  color:#1E4E28;
+  box-shadow: 2px 2px 5px #999;  
 }
+main div#imagen2:hover p#titulo{
+  margin-left: 6.7em;
+  margin-top: 5.250em;
+}
+
 
 main p#contenido{
   margin:auto;
@@ -170,6 +189,9 @@ main p#contenido{
   text-align: center;
    -webkit-transition:margin 0.3s;
   margin-top: 13.750em;
+  font-size: 1.5em;
+   color:white;
+
 
 }
 
@@ -209,12 +231,17 @@ main p#titulo1{
   -webkit-transition:margin 0.2s;
   margin-left: -4.375em;
   text-align: center;
-  font-size: 1.313em;
+  font-size: 1.750em;
 
 }
+main p#titulo1 a{
+  text-decoration: none;
+  color:#1E4E28;
+  box-shadow: 2px 2px 5px #999;  
+}
 main div#imagen3:hover p#titulo1{
- margin-left: 7.500em;
-  margin-top: 6.250em;
+ margin-left: 5em;
+  margin-top: 5.75em;
 }
 
 main p#contenido1{
@@ -223,6 +250,8 @@ main p#contenido1{
   text-align: center;
    -webkit-transition:margin 0.3s;
   margin-top: 13.750em;
+  font-size: 1.5em;
+   color:white;
 
 }
 
@@ -238,7 +267,7 @@ main div#imagen4 {
   background-repeat: no-repeat; 
   box-shadow: 2px 2px 5px #999;
   margin-top: 6.250em;
-  margin-left: 32em;  
+  margin-left: 35em;  
   margin-bottom: 2em;
 }
 
@@ -261,13 +290,18 @@ main p#titulo2{
   -webkit-transition:margin 0.2s;
   margin-left: - 4.375em;
   text-align: center;
-  font-size: 1.313em;
-
+  font-size: 1.750em;
 }
+main p#titulo2 a{
+  text-decoration: none;
+  color:#1E4E28;
+  box-shadow: 2px 2px 5px #999;  
+}
+
 main div#imagen4:hover p#titulo2{
   
-  margin-left: 10.625em;
-  margin-top:6.250em ;
+  margin-left: 5em;
+  margin-top: 3.250em;
 }
 
 main p#contenido2{
@@ -276,9 +310,12 @@ main p#contenido2{
   text-align: center;
    -webkit-transition:margin 0.3s;
   margin-top: 17.500em;
+  font-size: 1.5em;
+   color:white;
 
 }
 
 main div#imagen4:hover p#contenido2{
-  margin-top: 8.750em;
+  margin-top: 7.750em;
 }
+
