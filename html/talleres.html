@@ -11,35 +11,85 @@
 	<link rel="stylesheet" type="text/css" href="../css/headerFooter.css">
 	<link rel="stylesheet" href="../css/estilostalleres.css">
 	<link rel="stylesheet" type="text/css" href="css/home.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+
+
+
+
+
 </head>
 <body>
 <div class="container-fluid">
 	<header class="row">
-		<nav class="col-lg-12 col-md-12 col-sm-12 col-xs-12 navbar">
+<<<<<<< HEAD
+		<div class="col-md-2">
+			<img src="../img/logoada.png" alt="Logo" class="img-responsive">
+		</div>
+		<div class="col-md-10">
+			<nav>
+				<ul class="nav nav-pills">
+					<li><a href="../index.html">Home</a></li>
+					<li><a href="Nosotros.html">Nosotros</a></li>
+					<li><a href="talleres.html">Talleres</a></li>
+					<li><a href="#">Galeria</a></li>
+					<li><a href="contact.html">Contacto</a></li>
+					<!--li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Contacto<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="#">Formulario de Consulta</a></li>
+							<<li><a href="#">Preguntas Frecuentes</a></li>
+						</ul>
+					</li-->
+				</ul>
+			</nav>
+		</div>
+	</header><!-- fin del header header-->
+=======
+		    <nav class="col-lg-12 col-md-12 col-sm-12 col-xs-12 navbar">
 				<div class="navbar-header">
-					<img class="pull-left img-responsive" src="../imgs/150x150-navBrandAda.jpg" alt="">
+					<img class="pull-left img-responsive hidden-lg hidden-md" src="../imgs/130x130-navBrandAda.jpg" alt="">
+					<img class="pull-left img-responsive hidden-sm hidden-xs" src="../imgs/170x150-navBrandAda.jpg" alt="">
 			        <button type="button" class="navbar-toggle btn btn-lg pull-right" data-toggle="collapse" data-target="#myFirstNavbar" >
         			<span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
 					</button>        
 				</div>        
-		        <div class="collapse navbar-collapse pull-right" id="myFirstNavbar">
-				    <ul class="nav navbar-nav hidden-xs">
-				        <li><a href="#">Home</a></li>
-				        <li><a href="html/about.html">Nosotros</a></li>
-				        <li><a href="html/class.html">Talleres</a></li>
+		        <div class="collapse navbar-collapse" id="myFirstNavbar">
+				    <ul class="nav navbar-nav pull-right hidden-xs ulLg">
+				        <li class="active"><a href="#">Home</a></li>
+				        <li class="dropdown">
+							<a class="dropdown-toggle" data-toggle="dropdown" href="html/Nosotros.html">Nosotros<span class="caret"></span></a>
+							<ul class="dropdown-menu" id="ulXs">
+								<li class="well-sm"><a href="#">Nuestra Historia</a></li>
+								<li class="well-sm"><a href="#">Nuestras Instalaciones</a></li>
+								<li class="well-sm"><a href="#">Nuestros Servicios</a></li>
+								<li class="well-sm"><a href="#">Nuestros Docentes</a></li>
+							</ul>
+						</li>
+				        <li><a href="html/talleres.html">Talleres</a></li>
 				        <li><a href="html/gallery.html">Galeria</a></li>
 				        <li><a href="html/contact.html">Contacto</a></li>
 				    </ul>
-				    <ul class="nav navbar-nav hidden-lg hidden-md  hidden-sm myTextStyleMd"> 
-				        <li><a href="#">Home</a></li>
-				        <li><a href="html/about.html">Nosotros</a></li>
-				        <li><a href="html/class.html">Talleres</a></li>
+				    <ul class="nav navbar-nav hidden-lg hidden-md hidden-sm" id="ulXs"> 
+				        <li class="active"><a href="#">Home</a></li>
+				        <li class="dropdown">
+							<a class="dropdown-toggle" data-toggle="dropdown" href="html/Nosotros.html">Nosotros<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="#">Nuestra Historia</a></li>
+								<li><a href="#">Nuestras Instalaciones</a></li>
+								<li><a href="#">Nuestros Servicios</a></li>
+								<li><a href="#">Nuestros Docentes</a></li>
+							</ul>
+						</li>
+				        <li><a href="html/talleres.html">Talleres</a></li>
 				        <li><a href="html/gallery.html">Galeria</a></li>
 				        <li><a href="html/contact.html">Contacto</a></li>
 				    </ul>
 			    </div>
 		    </nav>	  
-	</header><!-- fin del header header-->
+		</header><!-- fin del header header-->
+>>>>>>> 7e3fd1bcfefd663d0c04f0412965b2c77913a883
 	
 	<main>
 		<div class="row"> 
@@ -107,6 +157,18 @@
 	</main>
 
 	<footer class="row">
+<<<<<<< HEAD
+			<div class="col-lg-6 col-md-6 text">
+				<p>Design for "The Ada Girls"</p>
+			</div>
+			<div class="col-md-3 redes">
+				<h5 class="text-left"><span class="glyphicon glyphicon-earphone"></span> 4758-7846</h5>
+				<h5 class="text-left"><span class="glyphicon glyphicon-envelope"></span> info@adaacademy.com</h5>
+				<a href="#"><img src="../img/logoface.png" alt="Facebook"></a>
+				<a href="#"><img src="../img/twittercircle.png" alt="Twitter"></a>
+				<a href="#"><img src="../img/instaicon.png" alt="Instagram"></a>
+			</div>
+=======
 	    <div class="col-lg-5 col-md-5 col-sm-5 hidden-xs copyRight">	
             <div class="well-lg">
             <p><img src="imgs/20x20-copyRight.jpg" alt="">  Ada Academy 2017</p>
@@ -126,6 +188,7 @@
 				</li>
 			</ul>					
 		</div>
+>>>>>>> 7e3fd1bcfefd663d0c04f0412965b2c77913a883
 
 		<div class="col-lg-3 col-md-3 col-sm-3 col-xs-5  map">
 		    <div class="caption text-center well-lg">
