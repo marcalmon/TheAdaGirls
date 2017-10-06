@@ -1,7 +1,4 @@
-body{
-  background: #E1F5F2;
-  font-family: 'Saira Extra Condensed', sans-serif;
-}
+
 
 main p{
 	font-size: 20px;
@@ -35,7 +32,7 @@ color:#5A5D9D;
 border-radius: 15px 50px;
 font-size: 15px;
 opacity:0.8;
-background-color: #6BC5D2;
+background-color: #D0E5C6;
 width: 300px;
 height: 200px;
 -webkit-box-shadow: 2px 2px 5px #999;
@@ -54,7 +51,7 @@ div.profe1 img:hover{
 border-radius: 50%;
 font-size: 15px;
 opacity:0.8;
-background-color: #6BC5D2;
+background-color:  #D0E5C6;
 
 
 -webkit-box-shadow: 2px 2px 5px #999;
