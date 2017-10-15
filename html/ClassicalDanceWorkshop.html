@@ -9,38 +9,55 @@
 
 	<link rel="stylesheet" type="text/css" href="../css/headerFooter.css">
 	<link rel="stylesheet" href="../css/estilitomenutalleres.css">
-	<link rel="stylesheet" type="text/css" href="css/home.css">
+	
 	
 </head>
 <body>
 
 <div class="container-fluid">
 	<header class="row">
-		<nav class="col-lg-12 col-md-12 col-sm-12 col-xs-12 navbar">
-			<div class="navbar-header">
-				<img class="pull-left img-responsive" src="../imgs/150x150-navBrandAda.jpg" alt="">
-		        <button type="button" class="navbar-toggle btn btn-lg pull-right" data-toggle="collapse" data-target="#myFirstNavbar" >
-				<span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
-				</button>        
-			</div>        
-	        <div class="collapse navbar-collapse pull-right" id="myFirstNavbar">
-			    <ul class="nav navbar-nav hidden-xs">
-			        <li><a href="#">Home</a></li>
-			        <li><a href="html/about.html">Nosotros</a></li>
-			        <li><a href="html/class.html">Talleres</a></li>
-			        <li><a href="html/gallery.html">Galeria</a></li>
-			        <li><a href="html/contact.html">Contacto</a></li>
-			    </ul>
-			    <ul class="nav navbar-nav hidden-lg hidden-md  hidden-sm myTextStyleMd"> 
-			        <li><a href="#">Home</a></li>
-			        <li><a href="html/about.html">Nosotros</a></li>
-			        <li><a href="html/class.html">Talleres</a></li>
-			        <li><a href="html/gallery.html">Galeria</a></li>
-			        <li><a href="html/contact.html">Contacto</a></li>
-			    </ul>
-		    </div>
-		</nav>	  
-	</header>
+		    <nav class="col-lg-12 col-md-12 col-sm-12 col-xs-12 navbar">
+				<div class="navbar-header">
+					<img class="pull-left img-responsive hidden-lg hidden-md" src="../imgs/130x130-navBrandAda.jpg" alt="">
+					<img class="pull-left img-responsive hidden-sm hidden-xs" src="../imgs/170x150-navBrandAda.jpg" alt="">
+			        <button type="button" class="navbar-toggle btn btn-lg pull-right" data-toggle="collapse" data-target="#myFirstNavbar" >
+        			<span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
+					</button>        
+				</div>        
+		        <div class="collapse navbar-collapse" id="myFirstNavbar">
+				    <ul class="nav navbar-nav pull-right hidden-xs ulLg">
+				        <li class="active"><a href="#">Home</a></li>
+				        <li class="dropdown">
+							<a class="dropdown-toggle" data-toggle="dropdown" href="html/Nosotros.html">Nosotros<span class="caret"></span></a>
+							<ul class="dropdown-menu" id="ulXs">
+								<li class="well-sm"><a href="../html/Nosotros.html">Nuestra Historia</a></li>
+								<li class="well-sm"><a href="../html/Nosotros.html#Nuestras Instalaciones">Nuestras Instalaciones</a></li>
+								<li class="well-sm"><a href="../html/Nosotros.html#Nuestros Servicios">Nuestros Servicios</a></li>
+								<li class="well-sm"><a href="../html/Nosotros.html#Nuestros Docentes">Nuestros Docentes</a></li>
+							</ul>
+						</li>
+				        <li><a href="../html/talleres.html">Talleres</a></li>
+				        <li><a href="../html/galeria.html">Galeria</a></li>
+				        <li><a href="../html/contact.html">Contacto</a></li>
+				    </ul>
+				    <ul class="nav navbar-nav hidden-lg hidden-md hidden-sm" id="ulXs"> 
+				        <li class="active"><a href="#">Home</a></li>
+				        <li class="dropdown">
+							<a class="dropdown-toggle" data-toggle="dropdown" href="../html/Nosotros.html">Nosotros<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="../html/Nosotros.html">Nuestra Historia</a></li>
+								<li><a href="../html/Nosotros.html#Nuestras Instalaciones">Nuestras Instalaciones</a></li>
+								<li><a href="../html/Nosotros.html#Nuestros Servicios">Nuestros Servicios</a></li>
+								<li><a href="../html/Nosotros.html#Nuestros Docentes">Nuestros Docentes</a></li>
+							</ul>
+						</li>
+				        <li><a href="../html/talleres.html">Talleres</a></li>
+				        <li><a href="../html/gallery.html">Galeria</a></li>
+				        <li><a href="../html/contact.html">Contacto</a></li>
+				    </ul>
+			    </div>
+		    </nav>	  
+		</header>
 						<!-- Main-->
 
 	<!--*************Titulo Pagina ******************-->
@@ -129,7 +146,7 @@
 		</div>
 		
 		
-		<div class="row" style="background:#D0E5C6;border-style: solid; border-width: 4px;border-color:#5A5090;border-radius: 15px 30px;">
+		<div class="row" style="background:#D0E5C6;border-style: solid; border-width: 4px;border-color:#DCE9DE;border-radius: 15px 30px;">
 		
 			<div class="">
 				<div class="col-md-6 ">
@@ -174,7 +191,7 @@
 				<div class="table-responsive">
 					<table class="table table-bordered table-hover table-condensed "><!--table-striped-->
 						<thead>
-							<tr>
+							<tr class="success center">
 								<th >Nivel</th>
 								<th >Edad</th>
 								<th >Hora/Semana</th>
@@ -191,7 +208,7 @@
 								Sabados 10 hr.</td>
 							
 						</tr>
-						<tr class="active">
+						<tr class="success">
 							<td>Principiantes</td>
 							<td>6-7 años</td> 
 							<td>1 ves por Semana</td>
@@ -208,7 +225,7 @@
 								Sabados 10 hr.</td>
 							
 						</tr>
-						<tr class="active">
+						<tr class="success">
 							<td>Cuadrilla</td>
 							<td>12-15 años</td> 
 							<td>2 ves por Semana</td>
@@ -225,7 +242,7 @@
 								Sabados 10 hr.</td>
 							
 						</tr>
-						<tr class="active">
+						<tr class="success"	>			
 							<td>Avanzado</td>
 							<td>Adultos</td> 
 							<td>1 ves por Semana</td>
@@ -262,7 +279,7 @@
 			</div>
 		</div>
 		
-		<div class="row" style="background:#E1F5F2;border-style: solid; border-width: 4px;border-color:#5A5090;border-radius: 15px 30px;">
+		<div class="row" style="background:#D0E5C6;border-style: solid; border-width: 4px;border-color:#DCE9DE;border-radius: 15px 30px;">
 			<div class="col-md-12 "> 
 				<div class=" contenidoA">
 					<p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt error molestiae quasi eaque ea, at eligendi reprehenderit, magnam quidem atque, porro voluptas ipsum est nostrum. A quibusdam quos, quaerat fugit.</p>
@@ -294,7 +311,7 @@
 			</div>
 		</div>
 		
-		<div class="row" style="background:#E1F5F2;border-style: solid; border-width: 4px;border-color:#5A5090;border-radius: 15px 30px;">
+		<div class="row" style="background:#D0E5C6;border-style: solid; border-width: 4px;border-color:#DCE9DE;border-radius: 15px 30px;">
 			<div class="col-md-12 "> 
 				<div class=" contenidoA">
 					<p>
@@ -321,35 +338,35 @@
 		</div>
 	</main>
 	<footer class="row">
-	    <div class="col-lg-5 col-md-5 col-sm-5 hidden-xs copyRight">	
-            <div class="well-lg">
-            <p><img src="../imgs/20x20-copyRight.jpg" alt="">  Ada Academy 2017</p>
-            </div>
-		</div>
-
-		<div class="col-lg-4 col-md-4 col-sm-4 col-xs-7 net">
-			<ul class="well-lg">
-				<li><p><span class="glyphicon glyphicon-earphone"></span>  4758-5555</p></li>
-				<li><p><span class="glyphicon glyphicon-envelope"></span>  info@adaacademy.com.ar</p></li>
-				<li>
-					<ul class="list-inline">
-						<li><a href="#"><img src="../imgs/30x30-brandYoutube.jpg" alt=""></a></li>
-						<li><a href="#"><img src="../imgs/30x30-brandFacebook.jpg" alt=""></a></li>
-						<li><a href="#"><img src="../imgs/30x30-brandTwitter.jpg" alt=""></a></li>
-					</ul>
-				</li>
-			</ul>					
-		</div>
-
-		<div class="col-lg-3 col-md-3 col-sm-3 col-xs-5  map">
-		    <div class="caption text-center well-lg">
-				<p><span class="glyphicon glyphicon-map-marker"></span></p>
-				<p>Cerrito 628</p>
-				<p>Ciudad Autónoma De Buenos Aires</p>
-                <p>República Argentina</p>
+		    <div class="col-lg-5 col-md-5 col-sm-5 hidden-xs copyRight">	
+                <div class="well-lg">
+                <p><img src="../imgs/20x20-copyRight.jpg" alt="">  Ada Academy 2017</p>
+                </div>
 			</div>
-		</div>
-    </footer>
+
+			<div class="col-lg-4 col-md-4 col-sm-4 col-xs-7 net">
+				<ul class="well-lg">
+					<li><p><span class="glyphicon glyphicon-earphone"></span>  4758-5555</p></li>
+					<li><p><span class="glyphicon glyphicon-envelope"></span>  info@adaacademy.com.ar</p></li>
+					<li>
+						<ul class="list-inline">
+							<li><a href="#"><img src="../imgs/30x30-brandYoutube.jpg" alt=""></a></li>
+							<li><a href="#"><img src="../imgs/30x30-brandFacebook.jpg" alt=""></a></li>
+							<li><a href="#"><img src="../imgs/30x30-brandTwitter.jpg" alt=""></a></li>
+						</ul>
+					</li>
+				</ul>					
+			</div>
+
+			<div class="col-lg-3 col-md-3 col-sm-3 col-xs-5  map">
+			    <div class="caption text-center well-lg">
+					<p><span class="glyphicon glyphicon-map-marker"></span></p>
+					<p>Cerrito 628</p>
+					<p>Ciudad Autónoma De Buenos Aires</p>
+	                <p>República Argentina</p>
+				</div>
+			</div>
+        </footer>
 
 
 

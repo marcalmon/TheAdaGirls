@@ -10,100 +10,142 @@
 	<link rel="stylesheet" href="../bootstrap-3.3.7-dist/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="../css/headerFooter.css">
 	<link rel="stylesheet" href="../css/estilostalleres.css">
-	<link rel="stylesheet" type="text/css" href="css/home.css">
+
 </head>
 <body>
 <div class="container-fluid">
 	<header class="row">
-		<nav class="col-lg-12 col-md-12 col-sm-12 col-xs-12 navbar">
+		    <nav class="col-lg-12 col-md-12 col-sm-12 col-xs-12 navbar">
 				<div class="navbar-header">
-					<img class="pull-left img-responsive" src="../imgs/150x150-navBrandAda.jpg" alt="">
+					<img class="pull-left img-responsive hidden-lg hidden-md" src="../imgs/130x130-navBrandAda.jpg" alt="">
+					<img class="pull-left img-responsive hidden-sm hidden-xs" src="../imgs/170x150-navBrandAda.jpg" alt="">
 			        <button type="button" class="navbar-toggle btn btn-lg pull-right" data-toggle="collapse" data-target="#myFirstNavbar" >
         			<span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
 					</button>        
 				</div>        
-		        <div class="collapse navbar-collapse pull-right" id="myFirstNavbar">
-				    <ul class="nav navbar-nav hidden-xs">
-				        <li><a href="#">Home</a></li>
-				        <li><a href="html/about.html">Nosotros</a></li>
-				        <li><a href="html/class.html">Talleres</a></li>
-				        <li><a href="html/gallery.html">Galeria</a></li>
-				        <li><a href="html/contact.html">Contacto</a></li>
+		        <div class="collapse navbar-collapse" id="myFirstNavbar">
+				    <ul class="nav navbar-nav pull-right hidden-xs ulLg">
+				        <li class="active"><a href="#">Home</a></li>
+				        <li class="dropdown">
+							<a class="dropdown-toggle" data-toggle="dropdown" href="../html/Nosotros.html">Nosotros<span class="caret"></span></a>
+							<ul class="dropdown-menu" id="ulXs">
+								<li class="well-sm"><a href="../html/Nosotros.html">Nuestra Historia</a></li>
+								<li class="well-sm"><a href="../html/Nosotros.html#Nuestras Instalaciones">Nuestras Instalaciones</a></li>
+								<li class="well-sm"><a href="../html/Nosotros.html#Nuestros Servicios">Nuestros Servicios</a></li>
+								<li class="well-sm"><a href="../html/Nosotros.html#Nuestros Docentes">Nuestros Docentes</a></li>
+							</ul>
+						</li>
+				        <li><a href="../html/talleres.html">Talleres</a></li>
+				        <li><a href="../html/gallery.html">Galeria</a></li>
+				        <li><a href="../html/contact.html">Contacto</a></li>
 				    </ul>
-				    <ul class="nav navbar-nav hidden-lg hidden-md  hidden-sm myTextStyleMd"> 
-				        <li><a href="#">Home</a></li>
-				        <li><a href="html/about.html">Nosotros</a></li>
-				        <li><a href="html/class.html">Talleres</a></li>
-				        <li><a href="html/gallery.html">Galeria</a></li>
-				        <li><a href="html/contact.html">Contacto</a></li>
+				    <ul class="nav navbar-nav hidden-lg hidden-md hidden-sm" id="ulXs"> 
+				        <li class="active"><a href="#">Home</a></li>
+				        <li class="dropdown">
+							<a class="dropdown-toggle" data-toggle="dropdown" href="html/Nosotros.html">Nosotros<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="../html/Nosotros.html">Nuestra Historia</a></li>
+								<li><a href="../html/Nosotros.html#Nuestras Instalaciones">Nuestras Instalaciones</a></li>
+								<li><a href="../html/Nosotros.html#Nuestros Servicios">Nuestros Servicios</a></li>
+								<li><a href="../html/Nosotros.html#Nuestros Docentes">Nuestros Docentes</a></li>
+							</ul>
+						</li>.
+				        <li><a href="../html/talleres.html">Talleres</a></li>
+				        <li><a href="../html/gallery.html">Galeria</a></li>
+				        <li><a href="../html/contact.html">Contacto</a></li>
 				    </ul>
 			    </div>
 		    </nav>	  
-	</header><!-- fin del header header-->
+		</header>
 	
-	<main>
-		<div class="row"> 
-			<div class="col-md-12" >
-				<div class="top" style="background: #D0E5C6">
-					<br>
-					<h3 class="text-center" style="font-size: 3.188em; letter-spacing: 0.2em">Nuestros Talleres</h3>
+	<main class="row">
+		<div class=" col-sm-12" >
+			<br><br>
+		</div>
+		<!--..................................................................................-->
+		<div class=" col-sm-1" >
+			<br><br>
+		</div>
+		<div><a  href="ClassicalDanceWorkshop.html">
+			<div class="cover-card col-lg-4 col-md-4 col-sm-4 " style="background: url(../img/dc1.jpg) no-repeat center top; background-size:450px 300px; ">
+				<p ><br><br><br>
 					
-					<h3 class="text-center" style="font-size: 1.188em">A partir de 4 años</h3>
-					<br>
-				</div>
+					Danza Clasica <br><br><br>
+					Niños y Adolescentes 
+				</p>
+				
 			</div>
 		</div>
-		
-		<div class="row"> 
-			<div class=" padre col-md-6 ">
-				<div id="imagen">
-					<div id="info" class="">
-						<p id="d" ><a href="clasicatalleres.html" style="text-decoration:none" >Danza Clasica</a></p>
-						<p id="d1"> Infantes & Adolescentes</p>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-6 center-block">
-				<div id="imagen1">
-					<div id="info1" class="thumbnail">
-						<p id="d2"><a href="contempotalleres.html" style="text-decoration:none" > Danza Contemporanea</a></p>
-						<p id="d3"> Adolescentes & Adultos</p>
-					</div>
-				</div>
-			</div>
+
+		<div class=" col-sm-2" >
+			<br><br>
 		</div>
 		
-		<div class="row"> 
-			<div class=" padre col-md-6 ">
-				<div id="imagen2" >
-					<div id="tango" class="thumbnail">
-						<p id="titulo" > <a href="tangotalleres.html" style="text-decoration:none" >Tango</a></p>
-						<p id="contenido"> Adultos</p>
-					</div>
-				</div>
-			</div>
-			
-			<div class="col-md-6 center-block">
-				<div id="imagen3">
-					<div id="oriental" class="thumbnail">
-						<p id="titulo1"> <a href="orientaltalleres.html" style="text-decoration:none" >Danza Oriental</a></p>
-						<p id="contenido1"> Adolescentes & Adultos</p>
-					</div>
-				</div>
+		<div><a  href="ContemporaryWorkshop.html">
+			<div class="cover-card col-lg-4 col-md-4 col-sm-4 " style="background: url(../img/cont2.gif) no-repeat center top; background-size:450px 300px;">
+				<p><br><br><br>
+					Danza Contemporanea<br><br><br>
+					Adolescentes y Adultos
+				</p>
 			</div>
 		</div>
-		
-		<div class="row"> 
-			<div class=" padre col-md-12 ">
-				<div id="imagen4" >
-					<div id="urbano" class="thumbnail">
-						<p id="titulo2" > <a href="urbanatalleres.html" style="text-decoration:none" >Danza Urbana</a></p>
-						<p id="contenido2"> Adolescentes & Adultos</p>
-					</div>
-				</div>
-			</div>
-		
+		<div class=" col-sm-1" >
+			<br><br>
 		</div>
+		<!--..................................................................................-->
+		<div class=" col-sm-12" >
+			<br><br>
+		</div>
+		<!--..................................................................................-->
+		<div class=" col-sm-4" >
+			<br><br>
+		</div>
+		<div><a  href="UrbanDanceWorkshop.html">
+			<div class="cover-card col-sm-4" style="background: url(../img/dub3.jpg) no-repeat center top; background-size:450px 300px;">
+				<p><br><br><br>
+					Tango<br><br><br>
+					Adultos
+				</p>
+			</div>
+		</div>
+		<div class=" col-sm-4" >
+			<br><br>
+		</div>
+		
+		<!--..................................................................................-->
+		<div class=" col-sm-12" >
+			<br><br>
+		</div>
+		<!--..................................................................................-->
+		
+		
+		<div class=" col-sm-1" >
+			<br><br>
+		</div>
+		<div><a  href="OrientalWorkshop.html">
+			<div class="cover-card col-lg-4 col-md-4 col-sm-4" style="background: url(../img/do3.jpg) no-repeat center top; background-size:450px 300px;">
+				<p><br><br><br>
+					Danza Oriental<br><br><br>
+					 Adultos
+				</p>
+			</div>
+		</div>
+		<div class=" col-sm-2" >
+			<br><br>
+		</div>
+		
+		<div><a  href="TangoWorkshop.html.html">
+			<div class="cover-card col-lg-4 col-md-4 col-sm-4" style="background: url(../img/tg1.jpg) no-repeat center top; background-size:450px 300px;">
+				<p><br><br><br>
+					Tango<br><br><br>
+					Adultos
+				</p>
+			</div>
+		</div>
+		<div class=" col-sm-1" >
+			<br><br>
+		</div>
+		<!--..................................................................................-->
 	</main>
 
 	<footer class="row">
