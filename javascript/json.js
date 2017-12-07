@@ -6,11 +6,11 @@ var nombre= $('#nombre').val();
 	var motivo= $('#motiv').val();
 	var interes= $('#int').val();
 	var ul = $('#error');
-
+	var text=$('#extra')
 $('#form').on('click',function(event){
 	event.preventDefault();
 	if(validar(nombre,mail) == true){
-			var jSON = {"nombre":nombre,"mail":mail,"apellido":apellido,"edad":edad}
+			var jSON = {"nombre":nombre,"mail":mail,"apellido":apellido,"edad":edad, "motivo":motivo,"interes":interes, "consulta":text}
 			console.log(jSON);
 		}
 
@@ -18,11 +18,22 @@ $('#form').on('click',function(event){
 })
 
 
-function validarRequeridos(campo){
+function validarRequeridos(nombre){
 
-	campo.trim();
+	nombre.trim();
 
-	if(campo.length == 0){
+	if(nombre.length == 0){
+
+		return false;
+	}
+	
+	return true;
+}
+function validarRequeridos(apellido){
+
+	apellido.trim();
+
+	if(apellido.length == 0){
 
 		return false;
 	}
@@ -66,7 +77,7 @@ function validarMail(mail){
 
 
 function validar(nombre, mail){
-	
+
 
 	valido = true; 
  
@@ -85,18 +96,18 @@ function validar(nombre, mail){
 			msg='<li>Por favor detalle el curso de su interes</li>'
 			ul.append(msg);
 			valido=false;
-		}
+		};
 		if(ValidarScroll(motivo)==false){
 			msg='<li>Por favor detalle el motivo de su consulta</li>'
 			ul.appen(msg);
 			valido=false;
-		}
+		};
 		if(validarRequeridos(apellido)==false){
 				msg = "<li>El apellido son  campos requerido</li>";
 			ul.append(msg);
 			valido = false;
-		}
-		if (){
+		};
+		
 
 		}
 		if(validarRequeridos(mail)== false){
