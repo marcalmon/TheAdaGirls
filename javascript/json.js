@@ -10,8 +10,9 @@ var nombre= $('#nombre').val();
 $('#form').on('click',function(event){
 	event.preventDefault();
 	if(validar(nombre,mail) == true){
-			var jSON = {"nombre":nombre,"mail":mail,"apellido":apellido,"edad":edad, "motivo":motivo,"interes":interes, "consulta":text}
-			console.log(jSON);
+			var jdatosSON = {"nombre":nombre,"mail":mail,"apellido":apellido,"edad":edad, "motivo":motivo,"interes":interes, "consulta":text}
+			var J= JSON.stringify(jdatos)
+			var a='<a href=index.html?datos='+J+'>link</a>'
 		}
 
 
