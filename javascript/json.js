@@ -1,21 +1,24 @@
 $(document).ready(function(){
-var nombre= $('#nombre').val();
+
+$('#send').on('click',function(event){
+	event.preventDefault();
+
+	var nombre= $('#nombre').val();
 	var edad=$('#edad').val();
 	var mail= $('#mail').val();
 	var apellido= $('#apellido').val();
 	var motivo= $('#motiv').val();
-	var interes= $('#int').val();
-	var ul = $('#error');
-	var text=$('#extra')
-$('#form').on('click',function(event){
-	event.preventDefault();
-	if(validar(nombre,mail) == true){
+	var interes = $('#myInterest').val();
+	var text=$('#extra');
+
+	console.log("edad es: "+edad)
+
+	if(validar(nombre, edad, interes, apellido, mail) == true){
 			var jdatosSON = {"nombre":nombre,"mail":mail,"apellido":apellido,"edad":edad, "motivo":motivo,"interes":interes, "consulta":text}
 			var J= JSON.stringify(jdatos)
 			var a='<a href=index.html?datos='+J+'>link</a>'
 		}
-
-
+	})
 })
 
 
@@ -41,7 +44,7 @@ function validarRequeridos(apellido){
 	
 	return true;
 }
-function validarEdad(Edad){
+function validarEdad(edad){
 	edad.trim();
 	if(edad.length== 0 || isNaN(edad)){
 		return false;
@@ -50,7 +53,8 @@ function validarEdad(Edad){
 };
 
 function ValidarScroll(interes){
-	if(i<0){
+
+	if(interes === "int" ){
 		return false;
 	}
 	return true;
@@ -77,40 +81,43 @@ function validarMail(mail){
 
 
 
-function validar(nombre, mail){
+function validar(nombre, edad, interes, apellido, mail){
 
+	//var ul = $('#error');
+	var ul = $("#error");
+	console.log("interes es: "+interes);
 
 	valido = true; 
  
 
 		if(validarRequeridos(nombre)== false) {
-			msg = "<li>El apellido es campos requerido</li>";
+			msg = "<li>El nombre es un campo requerido</li>";
 			ul.append(msg);
 			valido = false;
-		};
+		}
 		if (validarEdad(edad)==false){
 			msg='<li>La edad es un campo requerido</li>'
 			ul.append(msg);
 			valido=false;
-		};
+		}
 		if (ValidarScroll(interes)==false){
 			msg='<li>Por favor detalle el curso de su interes</li>'
 			ul.append(msg);
 			valido=false;
-		};
+		}
+		/* Por como esta el HTML No hay forma de que este campo quede vacio
 		if(ValidarScroll(motivo)==false){
 			msg='<li>Por favor detalle el motivo de su consulta</li>'
-			ul.appen(msg);
+			ul.append(msg);
 			valido=false;
-		};
+		}
+		*/
 		if(validarRequeridos(apellido)==false){
-				msg = "<li>El apellido son  campos requerido</li>";
+				msg = "<li>El apellido es un campo requerido</li>";
 			ul.append(msg);
 			valido = false;
-		};
-		
-
 		}
+		
 		if(validarRequeridos(mail)== false){
 
 			msg = "<li>El mail es un campo requerido</li>";
@@ -125,9 +132,9 @@ function validar(nombre, mail){
 				ul.append(msg);
 				valido = false;	
 			
+			}
 		}
-				return valido;
-
-		}
+		return valido;
+}
 
 		

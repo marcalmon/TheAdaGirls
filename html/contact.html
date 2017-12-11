@@ -49,10 +49,6 @@
             <div class="row">
                 <form id='form'>
                     <div class="col-md-10">
-                        <ul id='error' class='error'>
-                        </ul>
-                    </div>
-                    <div class="col-md-10">
                         <div>
                             <label for="first_name">Nombre</label>
                             <input type="text" name="Nombre" class="email space" id='nombre'>
@@ -79,10 +75,10 @@
                             </select>
                         </div>
                         <div>
-                            <label for="interest" id='int'>Curso de interés</label>
-                            <select class="email space" name="interest">
+                            <label for="interest">Curso de interés</label>
+                            <select id="myInterest" class="email space" name="interest">
                                 <option value="int">Elige el curso de tu interés</option>
-                                <option value="Mañana">Mañana</option>
+                                <option value="manana">Mañana</option>
                                 <option value="tarde">Tarde</option>
                                 <option value="noche">Noche</option>
                             </select>
@@ -91,16 +87,20 @@
                             <label for="text">Consulta</label>
                         </div>
                         <div>
-                            <textarea name="texto" rows="8" cols="80" placeholder="Escribir aquí..." maxlength="500" class="email" id='extra'></textarea>
+                            <textarea name="texto" rows="4" cols="80" placeholder="Escribir aquí..." maxlength="500" class="email" id='extra'></textarea>
                         </div>
                         <div class="center">
                             <button type="submit" name="Enviar" class="btn-medium" id='send'>Enviar</button>
                             <button type="cancel" name="Cancelar" class="btn-medium">Cancelar</button>
                         </div>
                     </div>
+
+                </form>       
+                <div class="col-md-10">
+                        <ul id="error"></ul>
+                </div>
+                
             </div>
-            <ul id='error' class='error'>
-            </ul>
         </div>
         </form>
     </div>
@@ -139,8 +139,9 @@
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="../javascript/json.js"></script>
     <script type="text/javascript" src="../javascript/jquery-3.2.1.min"></script>
+    <script type="text/javascript" src="../javascript/json.js"></script>
+    
 </body>
 
 </html>
