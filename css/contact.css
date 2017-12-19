@@ -3,8 +3,8 @@
   padding: -1px;
 }
 body{
-  font-family:"BOOKOS.TTF";
-  src: url(font/BOOKOS.TTF);
+  font-family:'Playfair Display', sans-serif;
+  
 }
 .withd{
   width: 90%;
