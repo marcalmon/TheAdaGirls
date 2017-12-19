@@ -97,6 +97,10 @@ main .colorletras{
 }
 
 .anclass{
+	font-family: 'Playfair Display', serif;
 	text-decoration: none;
-	color: #D0E5C6;
+	background-color: #D0E5C6;
+	opacity: 0.5;
+	color: black;
+	
 }
