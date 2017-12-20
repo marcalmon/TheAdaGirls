@@ -15,8 +15,9 @@ main article>div>div>a{
 }
 
 main .textSlider{
-    background: rgba(208, 229, 198, 0.5);
-    padding-top: 0em;
-    color: #000000;
+    background: rgba(208, 229, 198, 0.7);
+   /* padding-top: 0em;*/
+    color: #100808;
+   font-family: 'Saira Extra Condensed',serif;
 }
 /*******************FIN PRINCIPAL***************************/
